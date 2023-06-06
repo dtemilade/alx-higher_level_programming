@@ -1,7 +1,9 @@
 #include "lists.h"
+#include <stddef.h>
+#include <stdlib.h>
 
 /**
- * insert_node – prototype fns that inserts a number into a sorted singly-linked list.
+ * insert_node - prototype fns that inserts into a sorted singly-linked list.
  * @head: parameter variable for pointer
  * @number: parameter variable for number.
  * Return: NULL if fails Otherwise - a pointer to the new node.
