@@ -21,7 +21,7 @@ listint_t *insert_node(listint_t **head, int number)
 		return (NULL);
 	retval->n = number;
 
-	if (node->n >= number || node == NULL)
+	if (node == NULL || node->n >= number)
 	{
 		retval->next = node;
 		*head = retval;
