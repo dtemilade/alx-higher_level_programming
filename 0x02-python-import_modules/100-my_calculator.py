@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import sys
 
 """Executing the modules as scripts:
     by executing the module as the “main” file:
@@ -9,6 +8,7 @@ if __name__ == "__main__":
 
     """importing functions from the file"""
     from calculator_1 import add, sub, mul, div
+    import sys
 
     """program conditional statement"""
     if len(sys.argv) - 1 != 3:

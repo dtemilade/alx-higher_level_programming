@@ -11,6 +11,6 @@ def magic_calculation(a, b):
         c = add(a, b)
         for cons_var in range(4, 6):
             c = add(c, cons_var)
-            return c
+            return (c)
         else:
-            return sub(a, b)
+            return(sub(a, b))
