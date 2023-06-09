@@ -17,5 +17,7 @@ if __name__ == "__main__":
     else:
         print("{} arguments:".format(retval))
 
-        for testval in range(retval):
+        testval = 0
+        while testval < retval:
             print("{}: {}".format(testval + 1, sys.argv[testval + 1]))
+            testval += 1

@@ -10,4 +10,4 @@ if __name__ == "__main__":
     """importing variable from the file to print its value"""
     from variable_load_5 import a
 
-    print("{}".format(a))
+    print(a)
