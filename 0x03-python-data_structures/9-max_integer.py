@@ -8,5 +8,4 @@ def max_integer(my_list=[]):
     for listvar in range(len(my_list)):
         if my_list[listvar] > retval:
             retval = my_list[listvar]
-
-        return (retval)
+    return (retval)
