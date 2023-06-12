@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """function that removes all characters c and C from a string."""
+
+
 def no_c(my_string):
-    retval = [listvar for listvar in my_string if listvar != 'c' and listvar != 'C']
-    return "".join(retval)
+    retval = [k for k in my_string if k != 'c' and k != 'C']
+    return ("".join(retval))
