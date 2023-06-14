@@ -16,8 +16,8 @@ if __name__ == "__main__":
         sys.exit(1)
 
     """Available operators in the program"""
-    signvar = {"+": add, "-": sub, "*": mul, "/": div}
-    if sys.argv[2] not in list(signvar.keys()):
+    oprvar = {"+": add, "-": sub, "*": mul, "/": div}
+    if sys.argv[2] not in list(oprvar.keys()):
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
 
@@ -26,4 +26,4 @@ if __name__ == "__main__":
     b = int(sys.argv[3])
 
     """printing the result"""
-    print("{} {} {} = {}".format(a, sys.argv[2], b, signvar[sys.argv[2]](a, b)))
+    print("{} {} {} = {}".format(a, sys.argv[2], b, oprvar[sys.argv[2]](a, b)))

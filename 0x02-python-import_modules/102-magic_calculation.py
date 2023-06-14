@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
 """declaring Python functions prototype"""
+
+
 def magic_calculation(a, b):
 
     """importing operations function from the functions"""
