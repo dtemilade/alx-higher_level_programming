@@ -2,7 +2,7 @@
 
 
 def simple_delete(a_dictionary, key=""):
-"""function prototype conditional statement"""
-if a_dictionary.get(key) is not None:
-del a_dictionary[key]
-return (a_dictionary)
+    """function prototype conditional statement"""
+    if a_dictionary.get(key) is not None:
+        del a_dictionary[key]
+    return (a_dictionary)
