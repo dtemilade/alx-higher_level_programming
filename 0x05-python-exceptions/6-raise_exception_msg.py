@@ -6,4 +6,4 @@ Return: the exception raised.
 
 
 def raise_exception_msg(message=""):
-raise NameError(message)
+    raise NameError(message)

@@ -7,9 +7,9 @@ Otherwise, returns False
 
 
 def safe_print_integer(value):
-"""Handling Exceptions"""
-try:
-print("{:d}".format(value))
-return (True)
-except (TypeError, ValueError):
-return (False)
+    """Handling Exceptions"""
+    try:
+        print("{:d}".format(value))
+        return (True)
+    except (TypeError, ValueError):
+        return (False)
