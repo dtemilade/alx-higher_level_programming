@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """prototype function that raises a name exception with a message
-Returns True if value has been correctly printed (it means the value is an integer)
-Otherwise, returns False and prints in stderr the error precede by Exception
+Returns True if value has been correctly printed else False
 """
 
 import sys

@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """function that executes a function safely
-Returns the result of the function, Otherwise, returns None.
-Incase of error, prints in stderr the error precede by Exception:
+Returns the result of the function, Otherwise, returns None
 """
 
 import sys
