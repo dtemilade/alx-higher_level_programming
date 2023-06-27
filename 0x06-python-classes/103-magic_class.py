@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Creates a new type: MagicClass matching exactly a bytecode provided by Holberton."""
+"""Creates a new type: MagicClass matching exactly a bytecode provided"""
 
 import math
 
