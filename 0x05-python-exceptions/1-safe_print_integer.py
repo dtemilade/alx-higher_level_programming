@@ -4,6 +4,7 @@ Returns True if value has been correctly printed (it means the value is an integ
 Otherwise, returns False
 """
 
+
 def safe_print_integer(value):
     """Handling Exceptions"""
     try:

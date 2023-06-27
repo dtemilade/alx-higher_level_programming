@@ -3,6 +3,7 @@
 Returns the real number of integers printed
 """
 
+
 def safe_print_list_integers(my_list=[], x=0):
     """introducing variable"""
     retval = 0

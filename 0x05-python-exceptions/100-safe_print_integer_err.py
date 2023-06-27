@@ -6,6 +6,7 @@ Otherwise, returns False and prints in stderr the error precede by Exception
 
 import sys
 
+
 def safe_print_integer_err(value):
     """Handling Exceptions"""
     try:
