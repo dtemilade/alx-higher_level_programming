@@ -6,8 +6,6 @@ Incase of error, prints in stderr the error precede by Exception:
 
 import sys
 
-
-
 def safe_function(fct, *args):
     """Handling Exceptions"""
     try:

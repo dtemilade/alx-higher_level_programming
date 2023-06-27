@@ -3,8 +3,6 @@
 that does exactly the same as the following Python bytecode:
 """
 
-
-
 def magic_calculation(a, b):
     """introducing variable parameter"""
     retval = 0

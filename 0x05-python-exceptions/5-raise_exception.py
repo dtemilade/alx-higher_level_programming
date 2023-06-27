@@ -3,7 +3,5 @@
 Return: the exception raised.
 """
 
-
-
 def raise_exception():
     raise TypeError
