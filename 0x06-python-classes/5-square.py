@@ -27,7 +27,7 @@ class Square:
     def area(self):
         """return current size of the square using return"""
         return (self.__size * self.__size)
-    """Introduce Public instance method that print 	square with the character #"""
+    """Introduce method that print square with the character #"""
 
     def my_print(self):
         """conditional statement for the method"""

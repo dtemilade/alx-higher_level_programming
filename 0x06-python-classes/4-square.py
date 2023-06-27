@@ -26,7 +26,7 @@ class Square:
         elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-    """Introduce Public instance method to return current area of the square."""
+    """Introduce method to return current area of the square."""
 
     def area(self):
         return (self.__size * self.__size)
