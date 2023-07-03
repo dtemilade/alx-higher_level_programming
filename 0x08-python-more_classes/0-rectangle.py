@@ -4,4 +4,4 @@
 
 class Rectangle:
     """Use Pass as No test cases needed."""
-    Pass
+    pass
