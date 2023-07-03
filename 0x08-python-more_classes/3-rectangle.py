@@ -3,9 +3,9 @@
 
 
 class Rectangle:
-    """Declaration of the class and the required process for the program follows:"""
+    """Declaration of the class and the required process for the program:"""
 
-    def __init__(self, width=0, height=0)
+    def __init__(self, width=0, height=0):
         """Define the rectangle and its parameters"""
         self.height = height
         self.width = width

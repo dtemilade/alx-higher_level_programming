@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """Declaration of the class and the required process for the program follows:"""
+    """Declaration of the class and the required process for the program:"""
     number_of_instances = 0
     print_symbol = "#"
 
@@ -74,7 +74,8 @@ class Rectangle:
 
         retval = []
         for x in range(self.__height):
-            [retval.append(str(self.print_symbol)) for y in range(self.__width)]
+            [retval.append(str(self.print_symbol))
+                for y in range(self.__width)]
             if x != self.__height - 1:
                 retval.append("\n")
         return ("".join(retval))
