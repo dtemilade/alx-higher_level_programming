@@ -54,7 +54,7 @@ class Rectangle:
         retval = []
         for x in range(self.__height):
             [retval.append('#')
-                    for y in range(self.__width)]
+                for y in range(self.__width)]
             if x != self.__height - 1:
                 retval.append("\n")
         return ("".join(retval))
