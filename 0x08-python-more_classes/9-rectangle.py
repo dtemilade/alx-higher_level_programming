@@ -43,13 +43,13 @@ class Rectangle:
 
     def area(self):
         """Display result for area of the Rectangle."""
-        return (self.__height * self.__width)
+        return (self.__width * self.__height)
 
     def perimeter(self):
         """Display result for perimeter of the Rectangle."""
         if self.__height == 0 or self.__width == 0:
             return (0)
-        return ((self.__height * 2) + (self.__width * 2))
+        return ((self.__width * 2) + (self.__height * 2))
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
@@ -69,7 +69,7 @@ class Rectangle:
 
     def __str__(self):
         """Display result for Rectangle with the # character."""
-        if self.__height == 0 or self.__width == 0:
+        if self.__width == 0 or self.__height == 0:
             return ("")
 
         retval = []
