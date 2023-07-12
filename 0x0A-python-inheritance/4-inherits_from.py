@@ -7,6 +7,6 @@ otherwise False.
 
 def inherits_from(obj, a_class):
     """The method to perform the task with conditional statement."""
-    if issubclass(type(obj), a_class) and type(obj) == a_class:
-        return False
-    return True
+    if issubclass(type(obj), a_class) and type(obj) != a_class:
+        return True
+    return False
