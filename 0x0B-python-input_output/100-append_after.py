@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" function that inserts a line of text to a file, after each line containing a specific string """
+""" function that inserts a line of text to a file,
+after each line containing a specific string
+"""
 
 
 def append_after(filename="", search_string="", new_string=""):
@@ -10,6 +12,6 @@ def append_after(filename="", search_string="", new_string=""):
             retval = retval + line
             if search_string in line:
                 retval = retval + new_string
-    """with statement used to properly closed the file after its suite finishes"""
+    """with statement used to properly closed file after its suits finish"""
     with open(filename, "w") as w:
         w.write(retval)

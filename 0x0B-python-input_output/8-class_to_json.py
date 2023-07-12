@@ -8,4 +8,3 @@ for JSON serialization of an object:
 def class_to_json(obj):
     """__dict__function to return an instance of a Class"""
     return obj.__dict__
-
