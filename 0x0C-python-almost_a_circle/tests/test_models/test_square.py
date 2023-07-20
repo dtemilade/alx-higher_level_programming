@@ -287,14 +287,12 @@ class TestSquare_size(unittest.TestCase):
 
     def test_inf_size(self):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
-        Square(float('inf'))
+            Square(float('inf'))
 
     def test_nan_size(self):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
             Square(float('nan'))
 
-
-    """Testing values"""
     def test_negative_size(self):
         with self.assertRaisesRegex(ValueError, "width must be > 0"):
             Square(-1, 2)
@@ -633,6 +631,7 @@ class TestSquare_kwargs_update(unittest.TestCase):
         s = Square(10, 10, 10, 10)
         s.update(size=5, id=89, a=1, b=54)
         self.assertEqual("[Square] (89) 10/10 - 5", str(s))
+
 
 if __name__ == "__main__":
     unittest.main()
