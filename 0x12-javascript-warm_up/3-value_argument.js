@@ -2,10 +2,8 @@
 
 // script that prints the first argument passed to it:
 
-#!/usr/bin/node
 if (process.argv[2]) {
   console.log(process.argv[2]);
-
 } else {
   console.log('No argument');
 }
