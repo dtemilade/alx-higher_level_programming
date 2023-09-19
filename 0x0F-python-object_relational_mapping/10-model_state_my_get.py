@@ -14,8 +14,9 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-""" Output the result """
     states = session.query(State).filter(State.name.like(sys.argv[4]))
+
+    """ Output the result """
     if states.count() != 1 or not states:
         print("Not found")
     else:

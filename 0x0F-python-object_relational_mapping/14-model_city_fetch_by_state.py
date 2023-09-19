@@ -17,9 +17,10 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-""" Output the result """
     query = session.query(State, City).join(City, State.id == City.state_id).\
         order_by(City.id)
+
+    """ Output the result """
     for state, city in query:
         print("{}: ({}) {}".format(state.name, city.id, city.name))
 

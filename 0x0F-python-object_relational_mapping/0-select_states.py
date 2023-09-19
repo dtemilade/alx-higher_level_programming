@@ -12,9 +12,7 @@ if __name__ == "__main__":
     mysql_password = sys.argv[2]
     database_name = sys.argv[3]
 
-
-""" Establishing connection """
-    """ Establishing connection """-""" Output the result """conn = MySQLdb.connect(
+    conn = MySQLdb.connect(
         host="localhost",
         user=mysql_username,
         passwd=mysql_password,
@@ -24,7 +22,7 @@ if __name__ == "__main__":
     cur.execute("SELECT * FROM states")
     table = cur.fetchall()
 
-""" Output the result """
+    """ Output the result """
     for row in table:
         print(row)
 

@@ -13,6 +13,6 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-""" Output the result """
+    """ Output the result """
     for states in session.query(State).filter(State.name.contains('%a')):
         print("{}: {}".format(states.id, states.name))

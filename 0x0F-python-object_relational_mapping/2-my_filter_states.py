@@ -13,7 +13,7 @@ if __name__ == "__main__":
     database_name = sys.argv[3]
     state_name = sys.argv[4]
 
-""" Establishing connection """
+    """ Establishing connection """
     conn = MySQLdb.connect(
         host="localhost",
         port=3306,
@@ -26,7 +26,7 @@ if __name__ == "__main__":
     ORDER BY states.id ASC".format(state_name))
     table = cur.fetchall()
 
-""" Output the result """
+    """ Output the result """
     for row in table:
         print(row)
 

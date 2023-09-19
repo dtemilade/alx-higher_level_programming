@@ -12,7 +12,7 @@ if __name__ == "__main__":
     mysql_password = sys.argv[2]
     database_name = sys.argv[3]
 
-""" Establishing connection """
+    """ Establishing connection """
     conn = MySQLdb.connect(
         host="localhost",
         port=3306,
@@ -25,7 +25,7 @@ if __name__ == "__main__":
     ORDER BY states.id ASC")
     table = cur.fetchall()
 
-""" Output the result """
+    """ Output the result """
     for row in table:
         print(row)
     cur.close()

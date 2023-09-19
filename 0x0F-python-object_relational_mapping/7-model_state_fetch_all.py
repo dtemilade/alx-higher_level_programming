@@ -15,7 +15,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-""" Output the result """
+    """ Output the result """
     for states_id, states_name in session.query(State.id,
                                                 State.name).order_by(State.id):
         print("{}: {}".format(states_id, states_name))

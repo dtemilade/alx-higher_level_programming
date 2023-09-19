@@ -15,8 +15,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-""" delete object """
     objects = session.query(State).filter(State.name.contains('%a'))
+
     for obj in objects:
         session.delete(obj)
     session.commit()

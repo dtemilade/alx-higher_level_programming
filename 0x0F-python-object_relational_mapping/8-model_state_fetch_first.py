@@ -14,7 +14,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-""" Output the result """
+    """ Output the result """
     states = session.query(State).first()
     if not states:
         print("Nothing")
