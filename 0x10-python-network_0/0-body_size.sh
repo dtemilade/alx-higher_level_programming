@@ -7,6 +7,9 @@ fi
 
 URL=$1
 
-RETVAL=$(curl -sI "$URL" | awk '/Content-Length/ {print $2}' | tr -d '\r')
+BODY_SIZE=$(curl -s "$URL" | wc -c)
+#RESPONSE=$(curl -s "$URL" | awk '/Content-Length/ {print $2}' | tr -d '\r')
+#RETVAL=$(echo -n "$RESPONSE" | wc -c)
+#RETVAL=$(curl -sI "$URL" | awk '/Content-Length/ {print $2}' | tr -d '\r')
 
-echo "${RETVAL}"
+echo "${BODY_SIZE}"
