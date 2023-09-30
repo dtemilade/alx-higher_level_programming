@@ -5,8 +5,8 @@
 import requests
 
 if __name__ == "__main__":
-	retval = requests.get('https://intranet.hbtn.io/status')
+    retval = requests.get('https://intranet.hbtn.io/status')
 
-	print("Body response:")
-	print("\t- type: {}".format(type(retval.text)))
-	print("\t- content: {}".format(retval.text))
+    print("Body response:")
+    print("\t- type: {}".format(type(retval.text)))
+    print("\t- content: {}".format(retval.text))
