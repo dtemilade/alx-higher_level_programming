@@ -17,8 +17,8 @@ if __name__ == "__main__":
         port=3306)
 
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE \
-                '{}' ORDER BY id".format(sys.argv[4]))
+    cur.execute("SELECT DISTINCT * FROM states WHERE name LIKE \
+            '{}' ORDER BY id LIMIT 1".format(sys.argv[4]))
     table = cur.fetchall()
 
     """ Output the result """
