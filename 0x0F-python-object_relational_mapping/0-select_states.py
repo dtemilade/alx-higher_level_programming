@@ -7,19 +7,15 @@ import sys
 
 
 if __name__ == "__main__":
-
-    mysql_username = sys.argv[1]
-    mysql_password = sys.argv[2]
-    database_name = sys.argv[3]
-
     conn = MySQLdb.connect(
         host="localhost",
-        user=mysql_username,
-        passwd=mysql_password,
-        conn=database_name
-    )
+        user=sys.argv[1],
+        passwd=sys.argv[2],
+        database=sys.argv[3],
+        port=3306)
+
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states")
+    cur.execute("SELECT * FROM states ORDER BY id")
     table = cur.fetchall()
 
     """ Output the result """
