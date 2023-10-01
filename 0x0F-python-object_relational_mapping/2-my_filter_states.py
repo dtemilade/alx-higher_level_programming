@@ -22,8 +22,8 @@ if __name__ == "__main__":
         conn=database_name
     )
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE BINARY '%{}%'\
-    ORDER BY states.id ASC".format(state_name))
+    cur.execute("SELECT * FROM states WHERE name LIKE
+                '{}' ORDER BY id".format(sys.argv[4]))
     table = cur.fetchall()
 
     """ Output the result """
