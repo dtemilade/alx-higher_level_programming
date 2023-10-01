@@ -8,35 +8,19 @@ import sys
 
 if __name__ == "__main__":
 
-    mysql_username = sys.argv[1]
-    mysql_password = sys.argv[2]
-    database_name = sys.argv[3]
-    state_name = sys.argv[4]
-
     """ Establishing connection """
     conn = MySQLdb.connect(
         host="localhost",
-        port=3306,
-        user=mysql_username,
-        passwd=mysql_password,
-        conn=database_name
-    )
+        user=sys.argv[1],
+        passwd=sys.argv[2],
+        database=sys.argv[3],
+        port=3306)
+
     cur = conn.cursor()
-    cur.execute("SELECT cities.name FROM cities\
-                 LEFT JOIN states\
-                 ON states.id = cities.state_id\
-                 WHERE states.name LIKE BINARY (%s) ORDER BY cities.id ASC",
-                (state_name,))
+    cur.execute("SELECT * FROM cities RIGHT JOIN states ON cities.state_id =\
+    states.id WHERE states.name = '{}'".format(sys.argv[4]))
     table = cur.fetchall()
 
-    end_str = ""
-    str_cities = ""
-
     """ Output the result """
-    for row in table:
-        str_cities = str_cities + end_str + row[0]
-        end_str = ", "
-
-    print(str_cities)
+    print(", ".join([retval[2] for retval in table]))
     cur.close()
-    conn.close()
