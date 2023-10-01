@@ -11,7 +11,6 @@ if __name__ == "__main__":
     """ Establishing connection """
     conn = MySQLdb.connect(
         host="localhost",
-        host="localhost",
         user=sys.argv[1],
         passwd=sys.argv[2],
         database=sys.argv[3],
