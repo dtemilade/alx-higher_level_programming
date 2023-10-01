@@ -18,8 +18,7 @@ if __name__ == "__main__":
         port=3306)
 
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%'\
-             ORDER BY id")
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id")
     table = cur.fetchall()
 
     """ Output the result """
