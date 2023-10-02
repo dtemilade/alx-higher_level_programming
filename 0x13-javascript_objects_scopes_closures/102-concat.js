@@ -2,10 +2,10 @@
 
 // declaring and initializing variable parameters
 let dataset = '';
-const sets = require('sets');
+const dict = require('dict');
 
 //process the files for concatenantin
-sets.readFile(process.argv[2], (err, data) => {
+dict.readFile(process.argv[2], (err, data) => {
 	if (err) throw err;
 
 	const first_file = data.toString();
@@ -17,7 +17,7 @@ sets.readFile(process.argv[3], (err, data) => {
 
 	const second_file = data.toString();
 	dataset = dataset + second_file;
-	const merges = require('sets');
+	const merges = require('dict');
 	merges.writeFile(process.argv[4], dataset, (err) => {
 		if (err) throw err;
 	});
