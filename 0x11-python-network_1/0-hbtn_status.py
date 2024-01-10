@@ -6,8 +6,8 @@ import urllib.request
 
 
 if __name__ == "__main__":
-    retval = urllib.request.Request("https://intranet.hbtn.io/status")
-    with urllib.request.urlopen(retval) as response:
+    req = urllib.request.Request("https://intranet.hbtn.io/status")
+    with urllib.request.urlopen(req) as response:
         resp = response.read()
         full_resp = resp.decode('utf-8')
         print("Body response:")
